@@ -1,84 +1,100 @@
 {
-    "shoes": [
-        {
-            "id": 1,
-            "name": "Jordan 1 Retro High OG",
-            "alias": "Chicago Lost and Found",
-            "image": "./images/j1lost.png",
-            "price": 380,
-            "stock": 10
-        },
-        {
-            "id": 2,
-            "name": "Jordan 4 Retro", 
-            "alias": "Undefeated",
-            "image": "./images/undefeated.png",
-            "price": 16217,
-            "stock": 10
-        },
-        {
-            "id": 3,
-            "name": "Nike Air Yeezy 2",
-            "alias": "Red October",
-            "image": "./images/redoctober.png",
-            "price": 9500,
-            "stock": 10
-        },
-        {
-            "id": 4,
-            "name": "Nike SB Dunk Low", 
-            "alias": "Freddy Krueger",
-            "image": "./images/freddy.png",
-            "price": 1500,
-            "stock": 10
-        },
-        {
-            "id": 5,
-            "name": "Nike SB Dunk Low",
-            "alias": "Jarritos",
-            "image": "./images/jarritos.png",
-            "price": 595,
-            "stock": 10
-        },
-        {
-            "id": 6,
-            "name": "Nike Kobe Protro",
-            "alias": "Reverse Grinch",
-            "image": "./images/reversegrinch.png",
-            "price": 595,
-            "stock": 10
-        },
-        {
-            "id": 7,
-            "name": "Jordan 4 Retro",
-            "alias": "Manila",
-            "image": "./images/manila.png",
-            "price": 14500,
-            "stock": 10
-        },
-        {
-            "id": 8,
-            "name": "adidas Yeezy Boost 350",
-            "alias": "Turtledove",
-            "image": "./images/turtledove.png",
-            "price": 349,
-            "stock": 10
-        },
-        {
-            "id": 9,
-            "name": "Jordan 1 Retro High",
-            "alias": "Dior",
-            "image": "./images/dior.png",
-            "price": 6556,
-            "stock": 10
-        },
-        {
-            "id": 10,
-            "name": "Jordan 1 Retro High",
-            "alias": "Travis Scott Mocha",
-            "image": "./images/tsmochahigh.png",
-            "price": 1175,
-            "stock": 10
-        }
-    ]
+  "shoes": [
+    {
+      "id": 1,
+      "name": "Jordan 1 Retro High OG",
+      "alias": "Chicago Lost and Found",
+      "image": "./images/j1lost.png",
+      "price": 380,
+      "stock": 10
+    },
+    {
+      "id": 2,
+      "name": "Jordan 4 Retro",
+      "alias": "Undefeated",
+      "image": "./images/undefeated.png",
+      "price": 16217,
+      "stock": 10
+    },
+    {
+      "id": 3,
+      "name": "Nike Air Yeezy 2",
+      "alias": "Red October",
+      "image": "./images/redoctober.png",
+      "price": 9500,
+      "stock": 10
+    },
+    {
+      "id": 4,
+      "name": "Nike SB Dunk Low",
+      "alias": "Freddy Krueger",
+      "image": "./images/freddy.png",
+      "price": 1500,
+      "stock": 10
+    },
+    {
+      "id": 5,
+      "name": "Nike SB Dunk Low",
+      "alias": "Jarritos",
+      "image": "./images/jarritos.png",
+      "price": 595,
+      "stock": 10
+    },
+    {
+      "id": 6,
+      "name": "Nike Kobe Protro",
+      "alias": "Reverse Grinch",
+      "image": "./images/reversegrinch.png",
+      "price": 595,
+      "stock": 10
+    },
+    {
+      "id": 7,
+      "name": "Jordan 4 Retro",
+      "alias": "Manila",
+      "image": "./images/manila.png",
+      "price": 14500,
+      "stock": 10
+    },
+    {
+      "id": 8,
+      "name": "adidas Yeezy Boost 350",
+      "alias": "Turtledove",
+      "image": "./images/turtledove.png",
+      "price": 349,
+      "stock": 10
+    },
+    {
+      "id": 9,
+      "name": "Jordan 1 Retro High",
+      "alias": "Dior",
+      "image": "./images/dior.png",
+      "price": 6556,
+      "stock": 10
+    },
+    {
+      "id": 10,
+      "name": "Jordan 1 Retro High",
+      "alias": "Travis Scott Mocha",
+      "image": "./images/tsmochahigh.png",
+      "price": 1175,
+      "stock": 10
+    },
+    {
+      "id": "aba4",
+      "name": "Jordan 4 Retro",
+      "alias": "Bred Reimagined",
+      "image": "https://sneakerbardetroit.com/wp-content/uploads/2024/01/Air-Jordan-4-Bred-Reimagined-February-2024-1068x765.png",
+      "price": "500",
+      "stock": "10"
+    },
+    {
+      "id": "e4d7",
+      "name": "adidas Samba",
+      "alias": "Samba",
+      "image": "https://nakedcph.com/cdn/shop/files/original_68c8fcb5-5532-4398-9d12-44efa83c44cd.jpg",
+      "price": 90,
+      "stock": "10"
+    }
+  ]
 }

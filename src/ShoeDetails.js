@@ -2,12 +2,9 @@ import React, { useState, useEffect } from 'react'
 import NavBar from './NavBar'
 import { useParams } from 'react-router-dom'
 
-
-
-
 function ShoeDetails() {
 
-    const [purachaseShoe, setPurchaseShoe] = useState({})
+    const [shoe, setShoe] = useState({})
 
     const params = useParams();
     const shoeId = params.id;
@@ -15,13 +12,13 @@ function ShoeDetails() {
     useEffect(() => {
         fetch(`http://localhost:3000/shoes/?id=${shoeId}`)
         .then(r => r.json())
-        .then(data => setPurchaseShoe(data[0]))
+        .then(data => setShoe(data[0]))
         .catch(error => console.error(error))
     }, [shoeId])
 
-    console.log(purachaseShoe)
+    console.log(shoe)
 
-    if(!purachaseShoe) {
+    if(!shoe) {
         return <div>Loading...</div>
     }
     
@@ -31,9 +28,12 @@ function ShoeDetails() {
         <header className='App-newheader'>
           <NavBar />
         </header>
-        <div>
-            <img src={purachaseShoe.image} alt={purachaseShoe.alias} />
-            <p>{purachaseShoe.price}</p>
+        <img src='./images/sillhouette.png' alt={shoe.alias} className='sellimage'/>
+        <div className='sellcard'>
+            <h3>{shoe.name}</h3>
+            <h4>{shoe.alias}</h4>
+            <h4>Price: {shoe.price}</h4>
+            <h4>Count: </h4>
         </div>
       </div>
     )

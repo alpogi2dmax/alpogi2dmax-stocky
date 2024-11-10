@@ -5,11 +5,11 @@ import './App.css';
 
 function SellShoes() {
 
-    const [image, setImage] = useState('./images/sillhouette.png')
+    const [image, setImage] = useState('')
     const [name, setName] = useState('')
     const [alias, setAlias] = useState('')
-    const [price, setPrice] = useState(0)
-    const [stock, setStock] = useState(0)
+    const [price, setPrice] = useState('')
+    const [stock, setStock] = useState('')
     const [shoeObj, setShoeObj] = useState('')
     const navigate = useNavigate()
 
@@ -39,12 +39,24 @@ function SellShoes() {
             name: name,
             alias: alias,
             image: image,
-            price: price,
+            price: parseFloat(price),
             stock: stock
         }
-
         setShoeObj(shoeObj)
-        navigate('/')
+        fetch('http://localhost:3000/shoes/', {
+            method: 'POST',
+            header: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(shoeObj),
+        })
+        .then(r => r.json())
+        .then(() => navigate('/'))
+        setName('')
+        setAlias('')
+        setImage('')
+        setPrice('')
+        setStock('')
     }
 
     
@@ -62,7 +74,7 @@ function SellShoes() {
                 <input type='number' name='price' id='price' placeholder='Enter Price' value={price} onChange={handlePriceChange}></input>
                 <input type='number'name='stock' id='stock' placeholder='Enter Stock Number' value={stock} onChange={handleStockChange}></input>
                 <br></br>
-                <img src={image} alt={alias} className='sellimage'/>
+                <img src={image === '' ? './images/sillhouette.png' : image} alt={alias} className='sellimage'/>
                 <div className='sellcard'>
                     <h3>Name: {name === '' ? 'Shoe Name' : name}</h3>
                     <h4>Alias: {alias === '' ? 'Alias' : alias}</h4>
