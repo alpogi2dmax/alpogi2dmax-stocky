@@ -4,6 +4,7 @@ import './App.css';
 import NavBar from './NavBar'
 import Search from './Search'
 import ShoeList from './ShoeList'
+import { useOutletContext } from 'react-router-dom'
 
 function App() {
 
@@ -15,7 +16,9 @@ function App() {
     .then(data => setShoes(data))
   }, [])
 
-  console.log(shoes)
+  const newShoes = useOutletContext
+
+  console.log(newShoes)
 
   return (
     <div>

@@ -51,7 +51,6 @@
 .card {
   height: 250px;
   width: 220px;
-  height: 300;
   background-color: rgb(214, 247, 234);
   border-style: solid;
   border-color: rgb(30, 112, 30);
@@ -70,6 +69,36 @@
 
 .card h4 {
   margin: 2px 0;
+}
+
+.sellcard {
+  height: 200px;
+  width: 400px;
+  background-color: rgb(214, 247, 234);
+  border-style: solid;
+  border-color: rgb(30, 112, 30);
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 10px;
+  float: left
+}
+
+.sellcard h4 {
+  margin: 5px 0;
+}
+
+.sellimage {
+  height: 200px;
+  width: 400px;
+  background-color: rgb(214, 247, 234);
+  border-style: solid;
+  border-color: rgb(30, 112, 30);
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 10px;
+  float: left
 }
 
 .image {

@@ -15,7 +15,18 @@ function NavBar() {
                 >
                     Home
                 </NavLink>
+                <NavLink
+                    to='/sellshoes'
+                >
+                    Sell Shoes
+                </NavLink>
+                <NavLink
+                    to='/profile/:id'
+                >
+                    Shoe Details
+                </NavLink>
             </nav>
+
         </div>
     )
 }

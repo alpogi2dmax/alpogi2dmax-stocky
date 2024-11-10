@@ -1,9 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './App.css';
+import { Link } from 'react-router-dom'
 
 function ShoeCard({shoe}) {
 
-    console.log(shoe)
+    
 
     return (
         <div className='card'>
@@ -11,6 +12,7 @@ function ShoeCard({shoe}) {
             <h4>{shoe.name}</h4>
             <p>{shoe.alias}</p>
             <p>Price: ${shoe.price}</p>
+            <Link to={`/shoedetails/${shoe.id}`}>Buy Shoe</Link>
         </div>
     )
 }
