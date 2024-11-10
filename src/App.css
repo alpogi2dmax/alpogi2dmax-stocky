@@ -24,8 +24,16 @@
   color: white;
 }
 .App-newheader {
-  font: Gestura Text Regular;
   color: green
+}
+
+.h1header {
+  display: inline-block;
+  vertical-align: top
+}
+
+.searchbar {
+  text-align: center
 }
 
 .App-link {
