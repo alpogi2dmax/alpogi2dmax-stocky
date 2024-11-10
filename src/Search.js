@@ -4,7 +4,7 @@ import './App.css';
 function Search() {
     return (
         <div className='searchbar'>
-            <input type='text' placeholder='Search for shoes'></input>
+            <input className='searchbar' size='50' type='text' placeholder='Search for shoes'></input>
         </div>
     )
 }

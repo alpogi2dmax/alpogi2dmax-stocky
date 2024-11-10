@@ -71,6 +71,14 @@
             "image": "./images/dior.png",
             "price": 6556,
             "stock": 10
+        },
+        {
+            "id": 10,
+            "name": "Jordan 1 Retro High",
+            "alias": "Travis Scott Mocha",
+            "image": "./images/tsmochahigh.png",
+            "price": 1175,
+            "stock": 10
         }
     ]
 }

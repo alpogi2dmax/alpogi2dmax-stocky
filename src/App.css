@@ -33,7 +33,15 @@
 }
 
 .searchbar {
-  text-align: center
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px
+}
+
+.searchbar input {
+  font-size: 18px;
+  width: 70%
 }
 
 .App-link {
