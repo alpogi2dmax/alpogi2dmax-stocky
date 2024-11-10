@@ -96,5 +96,65 @@
       "price": 90,
       "stock": "10"
     }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "name": "Jordan 1 Retro High OG",
+      "alias": "Chicago Lost and Found",
+      "image": "./images/j1lost.png",
+      "price": 380,
+      "stock": 10
+    },
+    {
+      "id": 8,
+      "name": "adidas Yeezy Boost 350",
+      "alias": "Turtledove",
+      "image": "./images/turtledove.png",
+      "price": 349,
+      "stock": 10
+    },
+    {
+      "id": 8,
+      "name": "adidas Yeezy Boost 350",
+      "alias": "Turtledove",
+      "image": "./images/turtledove.png",
+      "price": 349,
+      "stock": 10
+    },
+    {
+      "id": 5,
+      "name": "Nike SB Dunk Low",
+      "alias": "Jarritos",
+      "image": "./images/jarritos.png",
+      "price": 595,
+      "stock": 10
+    },
+    {
+      "id": "2c1e"
+    },
+    {
+      "id": "1fbd"
+    },
+    {
+      "id": 1,
+      "name": "Jordan 1 Retro High OG",
+      "alias": "Chicago Lost and Found",
+      "image": "./images/j1lost.png",
+      "price": 380,
+      "stock": 10
+    },
+    {
+      "id": "f747"
+    },
+    {
+      "id": "b493"
+    },
+    {
+      "id": "6e67"
+    },
+    {
+      "id": "6f2d"
+    }
   ]
 }

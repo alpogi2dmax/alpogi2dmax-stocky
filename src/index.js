@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
-import ShoeDetails from './ShoeDetails'
+import ShoeDetails from './AddToCart'
 import reportWebVitals from './reportWebVitals';
 import SellShoes from './SellShoes';
+import AddToCart from './AddToCart';
 
 const router = createBrowserRouter([
   {
@@ -17,8 +18,8 @@ const router = createBrowserRouter([
     element: <SellShoes />
   },
   {
-    path: '/shoedetails/:id',
-    element: <ShoeDetails />
+    path: '/addtocart/:id',
+    element: <AddToCart />
   }
 ])
 

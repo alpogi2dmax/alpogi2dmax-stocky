@@ -24,10 +24,10 @@ function NavBar() {
                     Sell Shoes
                 </NavLink>
                 <NavLink
-                    to='/profile/:id'
+                    to='/addtocart/:id'
                     className='nav-link'
                 >
-                    Shoe Details
+                    Add to Cart
                 </NavLink>
             </nav>
             <hr></hr>
