@@ -4,11 +4,11 @@ import './App.css';
 import NavBar from './NavBar'
 import Search from './Search'
 import ShoeList from './ShoeList'
-import { useOutletContext } from 'react-router-dom'
 
 function App() {
 
   const [shoes, setShoes] = useState([])
+  const [searchShoe, setSearchShoe] = useState('')
 
   useEffect(() => {
     fetch('http://localhost:3000/shoes')
@@ -16,9 +16,11 @@ function App() {
     .then(data => setShoes(data))
   }, [])
 
-  const newShoes = useOutletContext
+  function handleSearchShoe(searchWord) {
+    setSearchShoe(searchWord)
+  }
 
-  console.log(newShoes)
+  const filteredShoes = shoes.filter(shoe => (shoe.name+' '+shoe.alias).toLowerCase().includes(searchShoe.toLowerCase()))
 
   return (
     <div>
@@ -26,8 +28,8 @@ function App() {
         <NavBar />
       </header>
       <div>
-        <Search />
-        <ShoeList shoes={shoes}/>
+        <Search onSearchShoe={handleSearchShoe}/>
+        <ShoeList shoes={filteredShoes}/>
       </div>
     </div>
   );

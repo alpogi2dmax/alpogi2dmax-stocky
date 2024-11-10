@@ -32,7 +32,7 @@ function ShoeDetails() {
         <div className='sellcard'>
             <h3>{shoe.name}</h3>
             <h4>{shoe.alias}</h4>
-            <h4>Price: {shoe.price}</h4>
+            <h4>Price: ${shoe.price}</h4>
             <h4>Count: </h4>
         </div>
       </div>
