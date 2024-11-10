@@ -8,7 +8,11 @@ function NavBar() {
         <div>
             <h1 className='h1header'>StockY</h1>
             <nav>
-                <
+                <NavLink
+                    to='/'
+                >
+                    Home
+                </NavLink>
             </nav>
             <Search/>
         </div>
