@@ -132,6 +132,39 @@
   color: rgb(11, 65, 34);
 }
 
+.table1 {
+  width: 300px;
+  border-style: solid;
+  border-color: white;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  margin-left: 10px;
+  align-items: center
+}
+
+.table2 {
+  width: 300px;
+  border-style: solid;
+  border-color: white;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  margin-left: 10px;
+  align-items: center
+}
+
+.table3 {
+  width: 100px;
+  border-style: solid;
+  border-color: white;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-align: right
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

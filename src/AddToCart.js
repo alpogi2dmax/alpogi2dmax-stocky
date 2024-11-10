@@ -30,7 +30,7 @@ function AddToCart() {
         .catch(error => console.error(error))
     }, [])
 
-    console.log(carts)
+    const totalAmount = carts.reduce((a, b) => a + b.price, 0)
 
     if(!carts) {
         return <div>Loading...</div>
@@ -43,21 +43,21 @@ function AddToCart() {
             </header>
             <table>
                 <tr>
-                    <th>Item Name</th>
-                    <th>Item Alias</th>
-                    <th>Amount</th>
+                    <th className='table1'>Item Name</th>
+                    <th className='table2'>Item Alias</th>
+                    <th className='table3'>Amount</th>
                 </tr>
                 {carts.map(cart => (
-                    <div>
-                        <td>{cart.name}</td>
-                        <td>{cart.alias}</td>
-                        <td>{cart.price}</td>
-                    </div>
+                    <tr>
+                        <td className='table1'>{cart.name}</td>
+                        <td className='table2'>{cart.alias}</td>
+                        <td className='table3'>${cart.price}</td>
+                    </tr>
                 ))}
                 <tr>
-                    <td>Total Amount</td>
-                    <td>''</td>
-                    <td>Total Amount</td>
+                    <td className='table1'>Total Amount</td>
+                    <td className='table2'></td>
+                    <td className='table3'>${totalAmount}</td>
                 </tr>
             </table>
         
