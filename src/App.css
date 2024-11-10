@@ -40,6 +40,29 @@
   color: #61dafb;
 }
 
+.card {
+  height: 250px;
+  width: 220px;
+  background-color: rgb(214, 247, 234);
+  border-style: solid;
+  border-color: rgb(30, 112, 30);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  float: left
+
+}
+
+.image {
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

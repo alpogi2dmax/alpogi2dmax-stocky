@@ -2,23 +2,28 @@
     "shoes": [
         {
             "id": 1,
-            "name": "Jordan 1 Retro High OG Chicago Lost and Found" 
+            "name": "Jordan 1 Retro High OG Chicago Lost and Found",
+            "image": "./images/j1lost.png"
         },
         {
             "id": 2,
-            "name": "Jordan 4 Retro Undefeated" 
+            "name": "Jordan 4 Retro Undefeated", 
+            "image": "./images/undefeated.png"
         },
         {
             "id": 3,
-            "name": "Nike Air Yeezy 2 Red October" 
+            "name": "Nike Air Yeezy 2 Red October",
+            "image": "./images/redoctober.png"
         },
         {
             "id": 4,
-            "name": "Nike SB Dunk Low Freddy Krueger" 
+            "name": "Nike SB Dunk Low Freddy Krueger", 
+            "image": "./images/freddy.png"
         },
         {
             "id": 5,
-            "name": "Nike SB Dunk Low Jarritos" 
+            "name": "Nike SB Dunk Low Jarritos",
+            "image": "./images/jarritos.png"
         }
     ]
 }

@@ -1,4 +1,6 @@
-import Search from './Search'
+import React from 'react'
+
+
 import { NavLink } from 'react-router-dom'
 import './App.css';
 
@@ -14,7 +16,6 @@ function NavBar() {
                     Home
                 </NavLink>
             </nav>
-            <Search/>
         </div>
     )
 }
