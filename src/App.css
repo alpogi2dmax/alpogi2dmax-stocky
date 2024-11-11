@@ -54,7 +54,7 @@
 }
 
 .card {
-  height: 280px;
+  height: 250px;
   width: 220px;
   background-color: rgb(214, 247, 234);
   border-style: solid;
@@ -89,32 +89,6 @@
   float: left
 }
 
-.shoepage {
-  height: auto;
-  width: 950px;
-  background-color: white;
-  border-style: solid;
-  border-color: rgb(30, 112, 30);
-  margin-top: 10px;
-  margin-bottom: 0px;
-  margin-right: 0px;
-  margin-left: 10px;
-  float: left
-}
-
-.cart {
-  height: auto;
-  width: 200px;
-  background-color: white;
-  border-style: solid;
-  border-color: rgb(30, 112, 30);
-  margin-top: 10px;
-  margin-bottom: 0px;
-  margin-right: 0px;
-  margin-left: 10px;
-  float: left
-}
-
 .sellcard h4 {
   margin: 5px 0;
 }
@@ -123,6 +97,19 @@
   height: 200px;
   width: 400px;
   background-color: rgb(214, 247, 234);
+  border-style: solid;
+  border-color: rgb(30, 112, 30);
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 10px;
+  float: left
+}
+
+.addtocart {
+  height: auto;
+  width: 800px;
+  background-color: white;
   border-style: solid;
   border-color: rgb(30, 112, 30);
   margin-top: 10px;
@@ -158,38 +145,7 @@
   color: rgb(11, 65, 34);
 }
 
-.table1 {
-  width: 300px;
-  border-style: solid;
-  border-color: white;
-  margin-top: 10px;
-  margin-bottom: 0px;
-  margin-right: 10px;
-  margin-left: 10px;
-  align-items: center
-}
 
-.table2 {
-  width: 300px;
-  border-style: solid;
-  border-color: white;
-  margin-top: 10px;
-  margin-bottom: 0px;
-  margin-right: 10px;
-  margin-left: 10px;
-  align-items: center
-}
-
-.table3 {
-  width: 100px;
-  border-style: solid;
-  border-color: white;
-  margin-top: 10px;
-  margin-bottom: 0px;
-  margin-right: 10px;
-  margin-left: 10px;
-  text-align: right
-}
 
 @keyframes App-logo-spin {
   from {

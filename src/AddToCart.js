@@ -9,6 +9,9 @@ function AddToCart() {
     const shoeId = params.id;
 
     const [shoe, setShoe] = useState('')
+    const [quantity, setQuantity] = useState(1)
+
+    
 
 
     useEffect(() => {
@@ -18,7 +21,13 @@ function AddToCart() {
         .catch(error => console.error(error))
     }, [])
 
-    console.log(shoe)
+    function handleQuantityChange(e) {
+        setQuantity(e.target.value)
+    }
+
+    let stockArray = (Array.from({length: shoe.stock + 1 }, (_, i) => i))
+
+    console.log(quantity)
     
 
     if(!shoe) {
@@ -30,15 +39,18 @@ function AddToCart() {
             <header className='App-newheader'>
                 <NavBar />
             </header>
-            <div>
+            <div className='addtocart'>
                 <h2>Your are about to Purchase the following item:</h2>
                 <h3>{shoe.name}</h3>
                 <h2>{shoe.alias}</h2>
-                <h1>{shoe.price}</h1>
+                <h4>Unit Price ${shoe.price}</h4>
                 <label for='quantity'>Quantity: </label>
-                <select id='quantity' >
-                    
+                <select id='quantity' value={quantity} onChange={handleQuantityChange}>
+                    {stockArray.slice(1).map(x => (
+                        <option>{x}</option>
+                    ))}
                 </select>
+                <h2>Total Price: </h2>
             </div>
             
             
