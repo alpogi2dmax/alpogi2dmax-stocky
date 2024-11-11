@@ -11,13 +11,15 @@ function AddToCart() {
     const [shoe, setShoe] = useState('')
     const [quantity, setQuantity] = useState(1)
 
-    
+    console.log(shoeId)
+
+    console.log(shoe)
 
 
     useEffect(() => {
-        fetch(`http://localhost:3000/shoes/?id=${shoeId}`)
+        fetch(`http://localhost:3000/shoes/${shoeId}`)
         .then(r => r.json())
-        .then(itemData => setShoe(itemData[0]))
+        .then(itemData => setShoe(itemData))
         .catch(error => console.error(error))
     }, [])
 
@@ -25,9 +27,24 @@ function AddToCart() {
         setQuantity(e.target.value)
     }
 
+    function handlePurchaseClick() {
+        fetch(`http://localhost:3000/shoes/${shoeId}`, {
+            method: 'PATCH',
+            header: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                stock: shoe.stock - quantity,
+            }),
+        })
+        .then((response) => { if (!response.ok) { throw new Error('Network response was not ok'); } return response.json(); })
+        .then((updatedItem) => console.log(updatedItem))
+        .catch(error => console.error(error));
+    }
+
     let stockArray = (Array.from({length: shoe.stock + 1 }, (_, i) => i))
 
-    console.log(quantity)
+    console.log(shoe.stock - quantity)
     
 
     if(!shoe) {
@@ -51,6 +68,7 @@ function AddToCart() {
                     ))}
                 </select>
                 <h2>Total Price: ${(quantity * shoe.price).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") }</h2>
+                <button onClick={handlePurchaseClick}>Purchase Items</button>
             </div>
             
             

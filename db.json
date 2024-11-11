@@ -1,15 +1,15 @@
 {
   "shoes": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Jordan 1 Retro High OG",
       "alias": "Chicago Lost and Found",
       "image": "./images/j1lost.png",
       "price": 380,
-      "stock": 10
+      "stock": 8
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Jordan 4 Retro",
       "alias": "Undefeated",
       "image": "./images/undefeated.png",
@@ -17,7 +17,7 @@
       "stock": 10
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Nike Air Yeezy 2",
       "alias": "Red October",
       "image": "./images/redoctober.png",
@@ -25,7 +25,7 @@
       "stock": 10
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Nike SB Dunk Low",
       "alias": "Freddy Krueger",
       "image": "./images/freddy.png",
@@ -33,7 +33,7 @@
       "stock": 10
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Nike SB Dunk Low",
       "alias": "Jarritos",
       "image": "./images/jarritos.png",
@@ -41,7 +41,7 @@
       "stock": 10
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Nike Kobe Protro",
       "alias": "Reverse Grinch",
       "image": "./images/reversegrinch.png",
@@ -49,7 +49,7 @@
       "stock": 10
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Jordan 4 Retro",
       "alias": "Manila",
       "image": "./images/manila.png",
@@ -57,7 +57,7 @@
       "stock": 10
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "adidas Yeezy Boost 350",
       "alias": "Turtledove",
       "image": "./images/turtledove.png",
@@ -65,7 +65,7 @@
       "stock": 10
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Jordan 1 Retro High",
       "alias": "Dior",
       "image": "./images/dior.png",
@@ -73,7 +73,7 @@
       "stock": 10
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Jordan 1 Retro High",
       "alias": "Travis Scott Mocha",
       "image": "./images/tsmochahigh.png",
@@ -81,6 +81,5 @@
       "stock": 10
     }
   ],
-  "cart": [
-  ]
+  "cart": []
 }
