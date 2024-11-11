@@ -12,9 +12,13 @@ function ShoeCard({shoe}) {
             <h4>{shoe.name}</h4>
             <p>{shoe.alias}</p>
             <p>Price: ${shoe.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
-            <p>Inventory: {shoe.stock} pieces</p>
-            <Link to={`/addtocart/${shoe.id}`}>Add to Cart</Link>
-            
+            {shoe.stock === 0 ?
+                <h2>OUT OF STOCK</h2> :
+                <div>
+                    <p>Inventory: {shoe.stock} pieces</p>
+                    <Link to={`/addtocart/${shoe.id}`}>Add to Cart</Link>
+                </div>
+            }
         </div>
     )
 }

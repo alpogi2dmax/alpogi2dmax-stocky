@@ -110,7 +110,7 @@
       "alias": "Linen",
       "image": "./images/linen.png",
       "price": 100,
-      "stock": 20
+      "stock": 0
     },
     {
       "id": "15",
