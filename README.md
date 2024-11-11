@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Stock Y Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my Stock Y Project. I wanted to created a site where people can buy and sell sneakers. I have applied my learnings with REACT in creating this page which involves the following:
 
-## Available Scripts
+- Components and Props
+- State and Events
+- Client Side Routing
 
-In the project directory, you can run:
+The basic premise of the site is a buy and sell site where a user can purchase a sneaker as well as upload a sneaker which will be available to purchase.
 
-### `npm start`
+## How to Use
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Upon opening the site, you will be greeted by the homepage that would include the header and the shoe list. The header includes the logo and the navbar while the shoelist includes a search component and the list of shoecards. Clicking Add to Cart in a ShoeCard would redirect to the Add To Cart component. This is where a user can set the quantity before purchasing. Purchasing would redirect to the HomePage with the new stock count for the shoe purchased. A Sell Shoe component is included in the NavBar which would allow the user to add a shoe for selling. Once submitted, it would then reflect in the Home Page with the newly uploaded shoe. Below are a breakdown of the components.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### `index`
 
-### `npm test`
+RouterProvider and createBrowser is used for client-side routing. There are three paths for this project; Home, Sell Shoes, and Add To Cart 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `App`
 
-### `npm run build`
+In the App component, I included the following components:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- NavBar in the header
+- Search and ShoeList on a separate div
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+A fetch request was done to get the shoe data from the db.json. The data is filtered from the data in the Search component for a search feature. This is then passed on the ShoeList component.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `ShoeList`
 
-### `npm run eject`
+Array.prototype.map wa used to iterate the shoe data. For each iteration, the data was passed on to the ShoeCard component.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### `ShoeCard`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The passed on shoe data is then rendered to the Shoe Card, it would show all the shoe information in the shoe card. Link is then used to redirect the path to the Add To Cart Component
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## `ShoeCard`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
