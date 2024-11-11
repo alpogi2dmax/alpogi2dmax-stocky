@@ -38,7 +38,7 @@
       "alias": "Jarritos",
       "image": "./images/jarritos.png",
       "price": 595,
-      "stock": 10
+      "stock": 7
     },
     {
       "id": "6",
@@ -46,7 +46,7 @@
       "alias": "Reverse Grinch",
       "image": "./images/reversegrinch.png",
       "price": 595,
-      "stock": 10
+      "stock": 9
     },
     {
       "id": "7",
@@ -78,7 +78,71 @@
       "alias": "Travis Scott Mocha",
       "image": "./images/tsmochahigh.png",
       "price": 1175,
-      "stock": 10
+      "stock": 9
+    },
+    {
+      "id": "11",
+      "name": "Nike Air Force 1 Low",
+      "alias": "Tiffany & Co. 1837 (Friends and Family)",
+      "image": "./images/tiffany.png",
+      "price": 7000,
+      "stock": 20
+    },
+    {
+      "id": "12",
+      "name": "Jordan 3 Retro SP",
+      "alias": "J Balvin Medellin Sunset",
+      "image": "./images/medellin.png",
+      "price": 320,
+      "stock": 20
+    },
+    {
+      "id": "13",
+      "name": "Nike Air Force 1 Low",
+      "alias": "Playstation",
+      "image": "./images/playstation.png",
+      "price": 3000,
+      "stock": 20
+    },
+    {
+      "id": "14",
+      "name": "Nike Air Force 1 Low",
+      "alias": "Linen",
+      "image": "./images/linen.png",
+      "price": 100,
+      "stock": 20
+    },
+    {
+      "id": "15",
+      "name": "Jordan 1 Retro High",
+      "alias": "Off-White Chicago",
+      "image": "./images/owchicago.png",
+      "price": 3835,
+      "stock": 20
+    },
+    {
+      "id": "16",
+      "name": "Nike SB Dunk Low",
+      "alias": "Ben & Jerry's Chunky Dunky",
+      "image": "./images/chunkydunky.png",
+      "price": 1750,
+      "stock": 20
+    },
+    {
+      "id": "17",
+      "name": "Nike SB Dunk Low",
+      "alias": "Red Lobster",
+      "image": "./images/redlobster.png",
+      "price": 15000,
+      "stock": 20
+    },
+    {
+      "id": "18",
+      "name": "Nike SB Dunk Low",
+      "alias": "Orange Lobster",
+      "image": "./images/orangelobster.png",
+      "price": 15000,
+      "stock": 20
     }
   ],
   "cart": []

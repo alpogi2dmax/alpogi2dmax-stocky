@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import NavBar from './NavBar'
+import { useNavigate } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 
 function AddToCart() {
@@ -7,6 +8,8 @@ function AddToCart() {
 
     const params = useParams();
     const shoeId = params.id;
+
+    const navigate = useNavigate()
 
     const [shoe, setShoe] = useState('')
     const [quantity, setQuantity] = useState(1)
@@ -36,6 +39,7 @@ function AddToCart() {
         .then((response) => { if (!response.ok) { throw new Error('Network response was not ok'); } return response.json(); })
         .then(() => {
             setIsPurchased(true)
+            setTimeout(navigate, 3000,'/')
         })
         .catch(error => console.error(error));
     }
