@@ -134,14 +134,30 @@
       "alias": "Red Lobster",
       "image": "./images/redlobster.png",
       "price": 15000,
-      "stock": 20
+      "stock": 17
     },
     {
       "id": "18",
       "name": "Nike SB Dunk Low",
       "alias": "Orange Lobster",
       "image": "./images/orangelobster.png",
-      "price": 15000,
+      "price": 350,
+      "stock": 20
+    },
+    {
+      "id": "19",
+      "name": "Jordan 1 Retro Low OG SP",
+      "alias": "Fragment x Travis Scott",
+      "image": "./images/tsfragment.png",
+      "price": 350,
+      "stock": 20
+    },
+    {
+      "id": "20",
+      "name": "Jordan 11 Retro",
+      "alias": "Gratitude",
+      "image": "./images/gratitude.png",
+      "price": 350,
       "stock": 20
     }
   ],
