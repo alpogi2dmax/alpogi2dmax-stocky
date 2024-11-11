@@ -33,6 +33,8 @@ Array.prototype.map wa used to iterate the shoe data. For each iteration, the da
 
 The passed on shoe data is then rendered to the Shoe Card, it would show all the shoe information in the shoe card. Link is then used to redirect the path to the Add To Cart Component
 
-## `ShoeCard`
+### `AddToCart`
+
+a useEffect is used to perform a fetch request for the specific id that was passed on using useParam. The information is then rendered to show the shoe information. A quantity dropdown is added to give the user the option to choose how many shoes to purchase. This is limited to the quantity in stock. A purchase button is added which would executed to Patch request and edit the stock based on the quantity bought. a
 
 
