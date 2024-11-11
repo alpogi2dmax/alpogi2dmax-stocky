@@ -11,7 +11,7 @@ function ShoeCard({shoe}) {
             <img className='image' src={shoe.image} alt={shoe.name} />
             <h4>{shoe.name}</h4>
             <p>{shoe.alias}</p>
-            <p>Price: ${shoe.price}</p>
+            <p>Price: ${shoe.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
             <p>Inventory: {shoe.stock} pieces</p>
             <Link to={`/addtocart/${shoe.id}`}>Add to Cart</Link>
             

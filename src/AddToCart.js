@@ -43,14 +43,14 @@ function AddToCart() {
                 <h2>Your are about to Purchase the following item:</h2>
                 <h3>{shoe.name}</h3>
                 <h2>{shoe.alias}</h2>
-                <h4>Unit Price ${shoe.price}</h4>
+                <h4>Unit Price ${shoe.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</h4>
                 <label for='quantity'>Quantity: </label>
                 <select id='quantity' value={quantity} onChange={handleQuantityChange}>
                     {stockArray.slice(1).map(x => (
                         <option>{x}</option>
                     ))}
                 </select>
-                <h2>Total Price: </h2>
+                <h2>Total Price: ${(quantity * shoe.price).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") }</h2>
             </div>
             
             
