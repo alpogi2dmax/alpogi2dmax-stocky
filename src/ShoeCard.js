@@ -12,7 +12,9 @@ function ShoeCard({shoe}) {
             <h4>{shoe.name}</h4>
             <p>{shoe.alias}</p>
             <p>Price: ${shoe.price}</p>
+            <p>Inventory: {shoe.stock} pieces</p>
             <Link to={`/addtocart/${shoe.id}`}>Add to Cart</Link>
+            
         </div>
     )
 }

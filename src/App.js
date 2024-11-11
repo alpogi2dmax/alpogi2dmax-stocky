@@ -10,6 +10,7 @@ function App() {
   const [shoes, setShoes] = useState([])
   const [searchShoe, setSearchShoe] = useState('')
 
+  
   useEffect(() => {
     fetch('http://localhost:3000/shoes')
     .then(r => r.json())

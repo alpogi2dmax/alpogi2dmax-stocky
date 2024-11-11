@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Outlet, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import NavBar from './NavBar'
 import './App.css';
 
@@ -83,7 +83,6 @@ function SellShoes() {
                     <button type='submit'>Sell Shoe</button>
                 </div>
             </form>
-            <Outlet context={shoeObj}/>
         </div>
     )
 }

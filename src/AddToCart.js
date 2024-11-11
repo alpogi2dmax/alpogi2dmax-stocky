@@ -4,63 +4,44 @@ import { useParams } from 'react-router-dom'
 
 function AddToCart() {
 
-    const [carts, setCarts] = useState([])
 
     const params = useParams();
     const shoeId = params.id;
 
+    const [shoe, setShoe] = useState('')
+
+
     useEffect(() => {
         fetch(`http://localhost:3000/shoes/?id=${shoeId}`)
         .then(r => r.json())
-        .then(itemData => {
-            fetch('http://localhost:3000/cart/', {
-               method: 'POST',
-               headers: {
-                'Content-Type': 'application/json'
-               },
-               body: JSON.stringify(itemData[0]),
-            })
-                .then(r => r.json())
-                .then(() => {
-                    fetch('http://localhost:3000/cart/')
-                    .then(r => r.json())
-                    .then(data => setCarts(data))
-                })
-        })
+        .then(itemData => setShoe(itemData[0]))
         .catch(error => console.error(error))
     }, [])
 
-    const totalAmount = carts.reduce((a, b) => a + b.price, 0)
+    console.log(shoe)
+    
 
-    if(!carts) {
+    if(!shoe) {
         return <div>Loading...</div>
     }
     
     return(
         <div>
             <header className='App-newheader'>
-            <NavBar />
+                <NavBar />
             </header>
-            <table>
-                <tr>
-                    <th className='table1'>Item Name</th>
-                    <th className='table2'>Item Alias</th>
-                    <th className='table3'>Amount</th>
-                </tr>
-                {carts.map(cart => (
-                    <tr>
-                        <td className='table1'>{cart.name}</td>
-                        <td className='table2'>{cart.alias}</td>
-                        <td className='table3'>${cart.price}</td>
-                    </tr>
-                ))}
-                <tr>
-                    <td className='table1'>Total Amount</td>
-                    <td className='table2'></td>
-                    <td className='table3'>${totalAmount}</td>
-                </tr>
-            </table>
-        
+            <div>
+                <h2>Your are about to Purchase the following item:</h2>
+                <h3>{shoe.name}</h3>
+                <h2>{shoe.alias}</h2>
+                <h1>{shoe.price}</h1>
+                <label for='quantity'>Quantity: </label>
+                <select id='quantity' >
+                    
+                </select>
+            </div>
+            
+            
         </div>
     )
 }
