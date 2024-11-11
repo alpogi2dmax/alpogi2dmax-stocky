@@ -10,11 +10,7 @@ function AddToCart() {
 
     const [shoe, setShoe] = useState('')
     const [quantity, setQuantity] = useState(1)
-
-    console.log(shoeId)
-
-    console.log(shoe)
-
+    const [isPurchased, setIsPurchased] = useState(false)
 
     useEffect(() => {
         fetch(`http://localhost:3000/shoes/${shoeId}`)
@@ -38,7 +34,9 @@ function AddToCart() {
             }),
         })
         .then((response) => { if (!response.ok) { throw new Error('Network response was not ok'); } return response.json(); })
-        .then((updatedItem) => console.log(updatedItem))
+        .then(() => {
+            setIsPurchased(true)
+        })
         .catch(error => console.error(error));
     }
 
@@ -60,6 +58,8 @@ function AddToCart() {
                 <h2>Your are about to Purchase the following item:</h2>
                 <h3>{shoe.name}</h3>
                 <h2>{shoe.alias}</h2>
+                <img src={shoe.image} alt={shoe.alias} />
+
                 <h4>Unit Price ${shoe.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</h4>
                 <label for='quantity'>Quantity: </label>
                 <select id='quantity' value={quantity} onChange={handleQuantityChange}>
@@ -69,6 +69,7 @@ function AddToCart() {
                 </select>
                 <h2>Total Price: ${(quantity * shoe.price).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") }</h2>
                 <button onClick={handlePurchaseClick}>Purchase Items</button>
+                {isPurchased ? <h3>Thank you for purchasing, you will be redirect to home!</h3>: null }
             </div>
             
             
