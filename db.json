@@ -149,7 +149,7 @@
       "name": "Jordan 1 Retro Low OG SP",
       "alias": "Fragment x Travis Scott",
       "image": "./images/tsfragment.png",
-      "price": 350,
+      "price": 1480,
       "stock": 20
     },
     {
@@ -157,7 +157,23 @@
       "name": "Jordan 11 Retro",
       "alias": "Gratitude",
       "image": "./images/gratitude.png",
-      "price": 350,
+      "price": 268,
+      "stock": 20
+    },
+    {
+      "id": "21",
+      "name": "Jordan 4 Retro",
+      "alias": "Military Blue",
+      "image": "./images/militaryblue.png",
+      "price": 395,
+      "stock": 20
+    },
+    {
+      "id": "22",
+      "name": "Jordan  Retro Low OG SP",
+      "alias": "Travis Scott Medium Olive",
+      "image": "./images/tsolive.png",
+      "price": 480,
       "stock": 20
     }
   ],
