@@ -6,7 +6,7 @@
       "alias": "Chicago Lost and Found",
       "image": "./images/j1lost.png",
       "price": 380,
-      "stock": 7
+      "stock": 97
     },
     {
       "id": "2",
@@ -14,7 +14,7 @@
       "alias": "Undefeated",
       "image": "./images/undefeated.png",
       "price": 16217,
-      "stock": 10
+      "stock": 100
     },
     {
       "id": "3",
@@ -22,7 +22,7 @@
       "alias": "Red October",
       "image": "./images/redoctober.png",
       "price": 9500,
-      "stock": 10
+      "stock": 100
     },
     {
       "id": "4",
@@ -30,7 +30,7 @@
       "alias": "Freddy Krueger",
       "image": "./images/freddy.png",
       "price": 1500,
-      "stock": 10
+      "stock": 100
     },
     {
       "id": "5",
@@ -38,7 +38,7 @@
       "alias": "Jarritos",
       "image": "./images/jarritos.png",
       "price": 595,
-      "stock": 7
+      "stock": 100
     },
     {
       "id": "6",
@@ -46,7 +46,7 @@
       "alias": "Reverse Grinch",
       "image": "./images/reversegrinch.png",
       "price": 595,
-      "stock": 9
+      "stock": 100
     },
     {
       "id": "7",
@@ -54,7 +54,7 @@
       "alias": "Manila",
       "image": "./images/manila.png",
       "price": 14500,
-      "stock": 10
+      "stock": 100
     },
     {
       "id": "8",
@@ -62,7 +62,7 @@
       "alias": "Turtledove",
       "image": "./images/turtledove.png",
       "price": 349,
-      "stock": 10
+      "stock": 100
     },
     {
       "id": "9",
@@ -70,7 +70,7 @@
       "alias": "Dior",
       "image": "./images/dior.png",
       "price": 6556,
-      "stock": 10
+      "stock": 100
     },
     {
       "id": "10",
@@ -78,7 +78,7 @@
       "alias": "Travis Scott Mocha",
       "image": "./images/tsmochahigh.png",
       "price": 1175,
-      "stock": 9
+      "stock": 100
     },
     {
       "id": "11",
@@ -86,7 +86,7 @@
       "alias": "Tiffany & Co. 1837 (Friends and Family)",
       "image": "./images/tiffany.png",
       "price": 7000,
-      "stock": 20
+      "stock": 200
     },
     {
       "id": "12",
@@ -94,7 +94,7 @@
       "alias": "J Balvin Medellin Sunset",
       "image": "./images/medellin.png",
       "price": 320,
-      "stock": 20
+      "stock": 200
     },
     {
       "id": "13",
@@ -102,7 +102,7 @@
       "alias": "Playstation",
       "image": "./images/playstation.png",
       "price": 3000,
-      "stock": 20
+      "stock": 200
     },
     {
       "id": "14",
@@ -110,7 +110,7 @@
       "alias": "Linen",
       "image": "./images/linen.png",
       "price": 100,
-      "stock": 0
+      "stock": 100
     },
     {
       "id": "15",
@@ -118,7 +118,7 @@
       "alias": "Off-White Chicago",
       "image": "./images/owchicago.png",
       "price": 3835,
-      "stock": 20
+      "stock": 200
     },
     {
       "id": "16",
@@ -126,7 +126,7 @@
       "alias": "Ben & Jerry's Chunky Dunky",
       "image": "./images/chunkydunky.png",
       "price": 1750,
-      "stock": 20
+      "stock": 200
     },
     {
       "id": "17",
@@ -134,7 +134,7 @@
       "alias": "Red Lobster",
       "image": "./images/redlobster.png",
       "price": 15000,
-      "stock": 17
+      "stock": 170
     },
     {
       "id": "18",
@@ -142,7 +142,7 @@
       "alias": "Orange Lobster",
       "image": "./images/orangelobster.png",
       "price": 350,
-      "stock": 20
+      "stock": 200
     },
     {
       "id": "19",
@@ -150,7 +150,7 @@
       "alias": "Fragment x Travis Scott",
       "image": "./images/tsfragment.png",
       "price": 1480,
-      "stock": 20
+      "stock": 200
     },
     {
       "id": "20",
@@ -158,7 +158,7 @@
       "alias": "Gratitude",
       "image": "./images/gratitude.png",
       "price": 268,
-      "stock": 20
+      "stock": 200
     },
     {
       "id": "21",
@@ -166,7 +166,7 @@
       "alias": "Military Blue",
       "image": "./images/militaryblue.png",
       "price": 395,
-      "stock": 20
+      "stock": 200
     },
     {
       "id": "22",
@@ -174,7 +174,7 @@
       "alias": "Travis Scott Medium Olive",
       "image": "./images/tsolive.png",
       "price": 480,
-      "stock": 20
+      "stock": 0
     }
   ],
   "cart": []

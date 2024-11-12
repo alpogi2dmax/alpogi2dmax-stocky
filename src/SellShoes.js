@@ -68,11 +68,11 @@ function SellShoes() {
             </header>
             <h1>Sell Your Shoes</h1>
             <form onSubmit={handleSellSubmit}>
-                <input type='text' name='name' id='name' placeholder='Enter Shoe Name' value={name} onChange={handleNameChange}></input>
-                <input type='text' name='alias' id='alias' placeholder='Enter Shoe Alias' value={alias} onChange={handleAliasChange}></input>
-                <input type='text' name='image' id='image' placeholder='Enter Shoe Image' value={image} onChange={handleImageChange}></input>
-                <input type='number' name='price' id='price' placeholder='Enter Price' value={price} onChange={handlePriceChange}></input>
-                <input type='number'name='stock' id='stock' placeholder='Enter Stock Number' value={stock} onChange={handleStockChange}></input>
+                <input type='text' name='name' id='name' placeholder='Enter Shoe Name' value={name} onChange={handleNameChange} required></input>
+                <input type='text' name='alias' id='alias' placeholder='Enter Shoe Alias' value={alias} onChange={handleAliasChange} required></input>
+                <input type='text' name='image' id='image' placeholder='Enter Shoe Image' value={image} onChange={handleImageChange} required></input>
+                <input type='number' name='price' id='price' placeholder='Enter Price' value={price} onChange={handlePriceChange} required></input>
+                <input type='number'name='stock' id='stock' placeholder='Enter Stock Number' value={stock} onChange={handleStockChange} required></input>
                 <br></br>
                 <img src={image === '' ? './images/sillhouette.png' : image} alt={alias} className='sellimage'/>
                 <div className='sellcard'>

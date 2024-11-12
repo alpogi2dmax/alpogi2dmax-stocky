@@ -44,7 +44,7 @@ function AddToCart() {
         .catch(error => console.error(error));
     }
 
-    let stockArray = (Array.from({length: shoe.stock + 1 }, (_, i) => i))
+    let stockArray = shoe.stock > 20 ? (Array.from({length: 20 + 1 }, (_, i) => i)) : (Array.from({length: shoe.stock + 1 }, (_, i) => i))
 
     console.log(shoe.stock - quantity)
     
@@ -73,7 +73,7 @@ function AddToCart() {
                 </select>
                 <h2>Total Price: ${(quantity * shoe.price).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") }</h2>
                 <button onClick={handlePurchaseClick}>Purchase Items</button>
-                {isPurchased ? <h3>Thank you for purchasing, you will be redirect to home!</h3>: null }
+                {isPurchased ? <h3>Thank you for purchasing, you will be redirected to home!</h3>: null }
             </div>
             
             
