@@ -35,6 +35,14 @@ The passed on shoe data is then rendered to the Shoe Card, it would show all the
 
 ### `AddToCart`
 
-a useEffect is used to perform a fetch request for the specific id that was passed on using useParam. The information is then rendered to show the shoe information. A quantity dropdown is added to give the user the option to choose how many shoes to purchase. This is limited to the quantity in stock. A purchase button is added which would executed to Patch request and edit the stock based on the quantity bought. a
+useEffect is used to perform a fetch request for the specific id that was passed on using useParam. The information is then rendered to show the shoe information. A quantity dropdown is added to give the user the option to choose how many shoes to purchase. This is limited to the quantity in stock. A purchase button is added which would a Patch request and edit the stock based on the quantity bought. A Thank you note will be generated and a setTimeout will be invoked to redirect the path to Home via useNavigate.
+
+### `SellShoes`
+
+The SellShoes component is accessed in the NavBar via NavLink. Using useState, the form will capture the details and will send a Post request when the submit button is clicked.The new shoe data will be added in the db.json which will be available in the home page.
+
+### `Search`
+
+The Search component is available in the App component. The search input will be captured in the App component which is used to filter the shoes array. This is what populates the ShoeList.
 
 
