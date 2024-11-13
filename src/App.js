@@ -10,7 +10,6 @@ import ShoeList from './ShoeList'
 function App() {
 
   const [shoes, setShoes] = useState([])
-  // const [searchShoe, setSearchShoe] = useState('')
 
   
   useEffect(() => {
@@ -25,18 +24,16 @@ function App() {
     .then(data => setShoes(data))
   }
 
-  // function handleSearchShoe(searchWord) {
-  //   setSearchShoe(searchWord)
-  // }
-
-  // const filteredShoes = shoes.filter(shoe => (shoe.name+' '+shoe.alias).toLowerCase().includes(searchShoe.toLowerCase()))
+  function addShoe(newShoe) {
+    setShoes([...shoes, newShoe])
+  }
 
   return (
     <div>
       <header className='App-newheader'>
         <NavBar />
       </header>
-      <Outlet context={[shoes, rerender]}/>
+      <Outlet context={[shoes, rerender, addShoe]}/>
     </div>
   );
 }

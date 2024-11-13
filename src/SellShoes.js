@@ -1,9 +1,11 @@
 import React, {useState} from 'react'
 import { useNavigate } from 'react-router-dom'
-import NavBar from './NavBar'
+import { useOutletContext } from 'react-router-dom';
 import './App.css';
 
 function SellShoes() {
+
+    const addShoe = useOutletContext()
 
     const [image, setImage] = useState('')
     const [name, setName] = useState('')
@@ -51,26 +53,26 @@ function SellShoes() {
             body: JSON.stringify(shoeObj),
         })
         .then(r => r.json())
-        .then(() => navigate('/'))
-        setName('')
-        setAlias('')
-        setImage('')
-        setPrice('')
-        setStock('')
+        .then(() => {
+            navigate('/')
+            addShoe[2](shoeObj)
+            setName('')
+            setAlias('')
+            setImage('')
+            setPrice('')
+            setStock('')
+        })
     }
 
     
     return (
         
         <div>
-            <header className='App-newheader'>
-                <NavBar />
-            </header>
             <h1>Sell Your Shoes</h1>
             <form onSubmit={handleSellSubmit}>
                 <input type='text' name='name' id='name' placeholder='Enter Shoe Name' value={name} onChange={handleNameChange} required></input>
                 <input type='text' name='alias' id='alias' placeholder='Enter Shoe Alias' value={alias} onChange={handleAliasChange} required></input>
-                <input type='text' name='image' id='image' placeholder='Enter Shoe Image' value={image} onChange={handleImageChange} required></input>
+                <input type='text' name='image' id='image' placeholder='Enter Shoe Image' value={image} onChange={handleImageChange} ></input>
                 <input type='number' name='price' id='price' placeholder='Enter Price' value={price} onChange={handlePriceChange} required></input>
                 <input type='number'name='stock' id='stock' placeholder='Enter Stock Number' value={stock} onChange={handleStockChange} required></input>
                 <br></br>

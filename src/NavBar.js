@@ -15,12 +15,12 @@ function NavBar() {
                 >
                     Home
                 </NavLink>
-                {/* <NavLink
+                <NavLink
                     to='/sellshoes'
                     className='nav-link'
                 >
                     Sell Shoes
-                </NavLink> */}
+                </NavLink>
                 <NavLink
                     to='/addtocart/:id'
                     className='nav-link'

@@ -175,6 +175,30 @@
       "image": "./images/tsolive.png",
       "price": 480,
       "stock": 0
+    },
+    {
+      "id": "463a",
+      "name": "Jordan 4 Retro",
+      "alias": "Bred Reimagined",
+      "image": "",
+      "price": 250,
+      "stock": "10"
+    },
+    {
+      "id": "5c10",
+      "name": "Jordan 5",
+      "alias": "Black Metallic Reimagined",
+      "image": "",
+      "price": 300,
+      "stock": "10"
+    },
+    {
+      "id": "6af4",
+      "name": "Jordan 6 Retro",
+      "alias": "Infrared",
+      "image": "https://i.ytimg.com/vi/dwTnlt_yFGY/hq720.jpg",
+      "price": 500,
+      "stock": "10"
     }
   ],
   "cart": []
