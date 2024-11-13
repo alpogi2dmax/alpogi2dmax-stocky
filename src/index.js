@@ -8,7 +8,6 @@ import SellShoes from './SellShoes';
 import AddToCart from './AddToCart';
 import ErrorPage from './ErrorPage';
 import Home from './Home';
-import Feature from './Feature'
 
 const router = createBrowserRouter([
   {
@@ -27,10 +26,6 @@ const router = createBrowserRouter([
       {
         path: '/addtocart/:id',
         element: <AddToCart />
-      },
-      {
-        path: '/feature',
-        element: <Feature />
       }
     ]
   }

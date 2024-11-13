@@ -42,7 +42,7 @@ function SellShoes() {
             alias: alias,
             image: image,
             price: parseFloat(price),
-            stock: stock
+            stock: parseInt(stock)
         }
         setShoeObj(shoeObj)
         fetch('http://localhost:3000/shoes/', {

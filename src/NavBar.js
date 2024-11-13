@@ -27,12 +27,6 @@ function NavBar() {
                 >
                     Add to Cart
                 </NavLink>
-                {/* <NavLink
-                    to='/feature'
-                    className='nav-link'
-                >
-                    Feature
-                </NavLink> */}
             </nav>
             <hr></hr>
 

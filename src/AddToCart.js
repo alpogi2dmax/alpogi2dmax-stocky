@@ -61,9 +61,6 @@ function AddToCart() {
                 <h2>Your are about to Purchase the following item:</h2>
                 <h3>{shoe.name}</h3>
                 <h2>{shoe.alias}</h2>
-                <img className='image' src={shoe.image} alt={shoe.alias} />
-                <img src='./images/undefeated.png' alt='Undefeated' />
-
                 <h4>Unit Price ${shoe.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</h4>
                 <label for='quantity'>Quantity: </label>
                 <select id='quantity' value={quantity} onChange={handleQuantityChange}>
