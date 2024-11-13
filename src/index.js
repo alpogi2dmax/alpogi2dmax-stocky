@@ -6,25 +6,33 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import SellShoes from './SellShoes';
 import AddToCart from './AddToCart';
-import ErrorPage from './ErrorPage'
+import ErrorPage from './ErrorPage';
+import Home from './Home';
+import Feature from './Feature'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    errorElement: <ErrorPage />,
+    errorElement: <ErrorPage />, 
     children: [
+      {
+        path: '/',
+        element: <Home />
+      },
+      {
+        path: '/sellshoes',
+        element: <SellShoes />
+      },
+      {
+        path: '/addtocart/:id',
+        element: <AddToCart />
+      },
+      {
+        path: '/feature',
+        element: <Feature />
+      }
     ]
-  },
-  {
-    path: '/sellshoes',
-    element: <SellShoes />,
-    errorElement: <ErrorPage />
-  },
-  {
-    path: '/addtocart/:id',
-    element: <AddToCart />,
-    errorElement: <ErrorPage />
   }
 ])
 

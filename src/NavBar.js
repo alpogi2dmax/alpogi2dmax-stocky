@@ -1,6 +1,4 @@
 import React from 'react'
-
-
 import { NavLink } from 'react-router-dom'
 import './App.css';
 
@@ -17,18 +15,24 @@ function NavBar() {
                 >
                     Home
                 </NavLink>
-                <NavLink
+                {/* <NavLink
                     to='/sellshoes'
                     className='nav-link'
                 >
                     Sell Shoes
-                </NavLink>
+                </NavLink> */}
                 <NavLink
                     to='/addtocart/:id'
                     className='nav-link'
                 >
                     Add to Cart
                 </NavLink>
+                {/* <NavLink
+                    to='/feature'
+                    className='nav-link'
+                >
+                    Feature
+                </NavLink> */}
             </nav>
             <hr></hr>
 

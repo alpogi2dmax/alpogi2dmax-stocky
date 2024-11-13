@@ -5,8 +5,8 @@
       "name": "Jordan 1 Retro High OG",
       "alias": "Chicago Lost and Found",
       "image": "./images/j1lost.png",
-      "price": 380,
-      "stock": 97
+      "price": 236,
+      "stock": 49
     },
     {
       "id": "2",
@@ -14,7 +14,7 @@
       "alias": "Undefeated",
       "image": "./images/undefeated.png",
       "price": 16217,
-      "stock": 98
+      "stock": 18
     },
     {
       "id": "3",
@@ -22,7 +22,7 @@
       "alias": "Red October",
       "image": "./images/redoctober.png",
       "price": 9500,
-      "stock": 100
+      "stock": 11
     },
     {
       "id": "4",
@@ -30,7 +30,7 @@
       "alias": "Freddy Krueger",
       "image": "./images/freddy.png",
       "price": 1500,
-      "stock": 100
+      "stock": 90
     },
     {
       "id": "5",
@@ -38,7 +38,7 @@
       "alias": "Jarritos",
       "image": "./images/jarritos.png",
       "price": 595,
-      "stock": 100
+      "stock": 99
     },
     {
       "id": "6",

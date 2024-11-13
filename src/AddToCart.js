@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import NavBar from './NavBar'
+import './App.css';
 import { useNavigate } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
+import { useOutletContext } from 'react-router-dom';
 
 function AddToCart() {
+
+    const rerender = useOutletContext()
 
 
     const params = useParams();
@@ -36,17 +40,16 @@ function AddToCart() {
                 stock: shoe.stock - quantity,
             }),
         })
-        .then((response) => { if (!response.ok) { throw new Error('Network response was not ok'); } return response.json(); })
+        .then((response) => response.json())
         .then(() => {
             setIsPurchased(true)
+            rerender[1]()
             setTimeout(navigate, 3000,'/')
         })
-        .catch(error => console.error(error));
     }
 
     let stockArray = shoe.stock > 20 ? (Array.from({length: 20 + 1 }, (_, i) => i)) : (Array.from({length: shoe.stock + 1 }, (_, i) => i))
 
-    console.log(shoe.stock - quantity)
     
 
     if(!shoe) {
@@ -54,15 +57,12 @@ function AddToCart() {
     }
     
     return(
-        <div>
-            <header className='App-newheader'>
-                <NavBar />
-            </header>
             <div className='addtocart'>
                 <h2>Your are about to Purchase the following item:</h2>
                 <h3>{shoe.name}</h3>
                 <h2>{shoe.alias}</h2>
-                <img src={shoe.image} alt={shoe.alias} />
+                <img className='image' src={shoe.image} alt={shoe.alias} />
+                <img src='./images/undefeated.png' alt='Undefeated' />
 
                 <h4>Unit Price ${shoe.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</h4>
                 <label for='quantity'>Quantity: </label>
@@ -75,9 +75,6 @@ function AddToCart() {
                 <button onClick={handlePurchaseClick}>Purchase Items</button>
                 {isPurchased ? <h3>Thank you for purchasing, you will be redirected to home!</h3>: null }
             </div>
-            
-            
-        </div>
     )
 }
 

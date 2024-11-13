@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom'
 
 function ShoeCard({shoe}) {
 
-    
-
     return (
         <div className='card'>
             <img className='image' src={shoe.image} alt={shoe.name} />
