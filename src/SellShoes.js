@@ -13,6 +13,7 @@ function SellShoes() {
     const [price, setPrice] = useState('')
     const [stock, setStock] = useState('')
     const [shoeObj, setShoeObj] = useState('')
+    const [shoeSold, setShoeSold] = useState(false)
     const navigate = useNavigate()
 
     function handleNameChange(e) {
@@ -54,13 +55,14 @@ function SellShoes() {
         })
         .then(r => r.json())
         .then(() => {
-            navigate('/')
             addShoe[2](shoeObj)
             setName('')
             setAlias('')
             setImage('')
             setPrice('')
             setStock('')
+            setShoeSold(true)
+            setTimeout(navigate, 3000, '/')
         })
     }
 
@@ -85,6 +87,7 @@ function SellShoes() {
                     <button type='submit'>Sell Shoe</button>
                 </div>
             </form>
+            {shoeSold ? <h2>Your shoe has been added. You will be redirected to home</h2> : null}
         </div>
     )
 }

@@ -175,6 +175,14 @@
       "image": "./images/tsolive.png",
       "price": 480,
       "stock": 10
+    },
+    {
+      "id": "c85c",
+      "name": "Airmax 90 NRG",
+      "alias": "Bacon",
+      "image": "https://i.ytimg.com/vi/alqwso2ZO1w/hq720.jpg",
+      "price": 86,
+      "stock": 10
     }
   ]
 }
